@@ -7,19 +7,21 @@ import 'firebase/compat/database';
 const firebaseConfig = {
     // Your credentials
 
-apiKey: "AIzaSyAZyM1cpCNy0t_4LyhcHDJLbupN9R--vJM",
+aapiKey: "AIzaSyB0s-fu_VdP0XXJ1zvbLVeqQgjHHqk5ZVQ",
 
-authDomain: "mos-interface-app1.firebaseapp.com",
+authDomain: "testing-form-new.firebaseapp.com",
 
-projectId: "mos-interface-app1",
+databaseURL: "https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app",
 
-storageBucket: "mos-interface-app1.appspot.com",
+projectId: "testing-form-new",
 
-messagingSenderId: "798840057364",
+storageBucket: "testing-form-new.appspot.com",
 
-appId: "1:798840057364:web:9c1feafc946880bc3c8101",
+messagingSenderId: "191958925202",
 
-measurementId: "G-G0DH9DWBY5",
+appId: "1:191958925202:web:a3c3a05af8c9de21f3cb4b",
+
+measurementId: "G-WY1CD2YD4G",
 
 databaseURL: "https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app"
 };
