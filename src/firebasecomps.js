@@ -7,7 +7,7 @@ import 'firebase/compat/database';
 const firebaseConfig = {
     // Your credentials
 
-aapiKey: "AIzaSyB0s-fu_VdP0XXJ1zvbLVeqQgjHHqk5ZVQ",
+apiKey: "AIzaSyB0s-fu_VdP0XXJ1zvbLVeqQgjHHqk5ZVQ",
 
 authDomain: "testing-form-new.firebaseapp.com",
 
