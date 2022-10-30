@@ -21,9 +21,7 @@ messagingSenderId: "191958925202",
 
 appId: "1:191958925202:web:a3c3a05af8c9de21f3cb4b",
 
-measurementId: "G-WY1CD2YD4G",
-
-databaseURL: "https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app"
+measurementId: "G-WY1CD2YD4G"
 };
   
 firebase.initializeApp(firebaseConfig);
