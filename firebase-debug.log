@@ -1,0 +1,189 @@
+[debug] [2022-10-30T11:27:59.566Z] ----------------------------------------------------------------------
+[debug] [2022-10-30T11:27:59.567Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2022-10-30T11:27:59.567Z] CLI Version:   11.15.0
+[debug] [2022-10-30T11:27:59.567Z] Platform:      linux
+[debug] [2022-10-30T11:27:59.567Z] Node Version:  v18.11.0
+[debug] [2022-10-30T11:27:59.568Z] Time:          Sun Oct 30 2022 16:57:59 GMT+0530 (India Standard Time)
+[debug] [2022-10-30T11:27:59.568Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-30T11:27:59.571Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-30T11:27:59.572Z] > authorizing via signed-in user (jesurajbandekar@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/jesuraj/Desktop/my-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-10-30T11:28:49.242Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-10-30T11:28:49.242Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"testing-form","name":"testing-form"}
+[debug] [2022-10-30T11:28:50.751Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2022-10-30T11:28:50.751Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2022-10-30T11:28:50.855Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/usr/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID testing-form. Please try again with a unique project ID.
+[debug] [2022-10-30T11:28:56.980Z] ----------------------------------------------------------------------
+[debug] [2022-10-30T11:28:56.981Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2022-10-30T11:28:56.982Z] CLI Version:   11.15.0
+[debug] [2022-10-30T11:28:56.982Z] Platform:      linux
+[debug] [2022-10-30T11:28:56.982Z] Node Version:  v18.11.0
+[debug] [2022-10-30T11:28:56.982Z] Time:          Sun Oct 30 2022 16:58:56 GMT+0530 (India Standard Time)
+[debug] [2022-10-30T11:28:56.982Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-30T11:28:56.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-30T11:28:56.986Z] > authorizing via signed-in user (jesurajbandekar@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/jesuraj/Desktop/my-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-10-30T11:29:33.906Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-10-30T11:29:33.906Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"testing-form-new","name":"testing-form-new"}
+[debug] [2022-10-30T11:29:35.476Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2022-10-30T11:29:35.476Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6045912501249901054"}
+[debug] [2022-10-30T11:29:35.477Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6045912501249901054 [none]
+[debug] [2022-10-30T11:29:37.092Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6045912501249901054 200
+[debug] [2022-10-30T11:29:37.092Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6045912501249901054 {"name":"operations/cp.6045912501249901054","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2022-10-30T11:29:37.592Z] [Project Creation Poller] Retrying task index 0
+[debug] [2022-10-30T11:29:37.592Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6045912501249901054 [none]
+[debug] [2022-10-30T11:29:39.195Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6045912501249901054 200
+[debug] [2022-10-30T11:29:39.195Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6045912501249901054 {"name":"operations/cp.6045912501249901054","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"191958925202","projectId":"testing-form-new","lifecycleState":"ACTIVE","name":"testing-form-new","createTime":"2022-10-30T11:30:22.949Z"}}
+[debug] [2022-10-30T11:29:39.196Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/testing-form-new:addFirebase [none]
+[debug] [2022-10-30T11:29:42.794Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/testing-form-new:addFirebase 200
+[debug] [2022-10-30T11:29:42.794Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/testing-form-new:addFirebase {"name":"operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm"}
+[debug] [2022-10-30T11:29:42.794Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm [none]
+[debug] [2022-10-30T11:29:44.032Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm 200
+[debug] [2022-10-30T11:29:44.033Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm {"name":"operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm"}
+[debug] [2022-10-30T11:29:44.532Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-10-30T11:29:44.533Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm [none]
+[debug] [2022-10-30T11:29:45.541Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm 200
+[debug] [2022-10-30T11:29:45.541Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm {"name":"operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm"}
+[debug] [2022-10-30T11:29:46.542Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-10-30T11:29:46.543Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm [none]
+[debug] [2022-10-30T11:29:47.776Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm 200
+[debug] [2022-10-30T11:29:47.776Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm {"name":"operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm"}
+[debug] [2022-10-30T11:29:49.776Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-10-30T11:29:49.776Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm [none]
+[debug] [2022-10-30T11:29:50.838Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm 200
+[debug] [2022-10-30T11:29:50.838Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm {"name":"operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm"}
+[debug] [2022-10-30T11:29:54.839Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-10-30T11:29:54.839Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm [none]
+[debug] [2022-10-30T11:29:55.743Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm 200
+[debug] [2022-10-30T11:29:55.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm {"name":"operations/workflows/N2VlNTM2NTMtMzM0Zi00ZmM2LWFkMzYtZmUyYWE1Y2M4NmJm","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"testing-form-new","projectNumber":"191958925202","displayName":"testing-form-new","name":"projects/testing-form-new","resources":{"hostingSite":"testing-form-new"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: testing-form-new
+[info]    - Project Name: testing-form-new
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/testing-form-new/overview
+[info] i  Using project testing-form-new (testing-form-new) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-10-30T11:29:55.791Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-10-30T11:29:55.791Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/testing-form-new
+[debug] [2022-10-30T11:29:57.797Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com 200
+[debug] [2022-10-30T11:29:57.797Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com [omitted]
+[warn] ⚠  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-10-30T11:29:57.798Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2022-10-30T11:29:57.798Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/testing-form-new
+[debug] [2022-10-30T11:29:59.745Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2022-10-30T11:29:59.745Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2022-10-30T11:30:09.753Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-10-30T11:30:09.753Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/testing-form-new
+[debug] [2022-10-30T11:30:11.695Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com 200
+[debug] [2022-10-30T11:30:11.695Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/testing-form-new/services/firebasedatabase.googleapis.com [omitted]
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-10-30T11:30:11.698Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/testing-form-new [none]
+[debug] [2022-10-30T11:30:12.915Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/testing-form-new 200
+[debug] [2022-10-30T11:30:12.915Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/testing-form-new {"projectId":"testing-form-new","projectNumber":"191958925202","displayName":"testing-form-new","name":"projects/testing-form-new","resources":{"hostingSite":"testing-form-new"},"state":"ACTIVE","etag":"1_1a764031-7669-4d69-ae33-b95248890218"}
+[debug] [2022-10-30T11:30:36.626Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/testing-form-new/locations/asia-southeast1/instances databaseId=testing-form-new-default-rtdb&validateOnly=true
+[debug] [2022-10-30T11:30:36.626Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/testing-form-new/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2022-10-30T11:30:38.055Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/testing-form-new/locations/asia-southeast1/instances 200
+[debug] [2022-10-30T11:30:38.055Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/testing-form-new/locations/asia-southeast1/instances {"name":"projects/191958925202/locations/asia-southeast1/instances/testing-form-new-default-rtdb","project":"projects/191958925202","databaseUrl":"https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2022-10-30T11:30:38.056Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/testing-form-new/locations/asia-southeast1/instances databaseId=testing-form-new-default-rtdb
+[debug] [2022-10-30T11:30:38.056Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/testing-form-new/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2022-10-30T11:30:39.871Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/testing-form-new/locations/asia-southeast1/instances 200
+[debug] [2022-10-30T11:30:39.871Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/testing-form-new/locations/asia-southeast1/instances {"name":"projects/191958925202/locations/asia-southeast1/instances/testing-form-new-default-rtdb","project":"projects/191958925202","databaseUrl":"https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-10-30T11:30:46.248Z] >>> [apiv2][query] GET https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2022-10-30T11:30:48.193Z] <<< [apiv2][status] GET https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2022-10-30T11:30:48.193Z] <<< [apiv2][body] GET https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] ✔  Database Rules for testing-form-new-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2022-10-30T11:31:11.268Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-10-30T11:31:11.378Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-10-30T11:31:11.378Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.13.0","browserURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.tgz"},"live":{"version":"9.13","browserURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.13.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.13.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.13.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.13.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /home/jesuraj/Desktop/my-app is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=672767228&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-10-30T11:40:38.408Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-10-30T11:40:38.408Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-10-30T11:40:38.816Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-10-30T11:40:38.816Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-10-30T11:40:38.820Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-10-30T11:40:39.230Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-10-30T11:40:39.231Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"coding-phoenix-12","id":117015847,"node_id":"U_kgDOBvmFJw","avatar_url":"https://avatars.githubusercontent.com/u/117015847?v=4","gravatar_id":"","url":"https://api.github.com/users/coding-phoenix-12","html_url":"https://github.com/coding-phoenix-12","followers_url":"https://api.github.com/users/coding-phoenix-12/followers","following_url":"https://api.github.com/users/coding-phoenix-12/following{/other_user}","gists_url":"https://api.github.com/users/coding-phoenix-12/gists{/gist_id}","starred_url":"https://api.github.com/users/coding-phoenix-12/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coding-phoenix-12/subscriptions","organizations_url":"https://api.github.com/users/coding-phoenix-12/orgs","repos_url":"https://api.github.com/users/coding-phoenix-12/repos","events_url":"https://api.github.com/users/coding-phoenix-12/events{/privacy}","received_events_url":"https://api.github.com/users/coding-phoenix-12/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2022-10-30T11:40:55Z","updated_at":"2022-10-30T11:40:55Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as coding-phoenix-12 
+[info] 
+[debug] [2022-10-30T11:40:48.063Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-10-30T11:40:48.413Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-10-30T11:40:48.413Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-10-30T11:40:48.671Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-10-30T11:40:49.022Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-10-30T11:40:49.022Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-10-30T11:40:49.111Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-10-30T11:40:49.541Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-10-30T11:40:49.541Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
