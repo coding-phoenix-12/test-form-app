@@ -21,7 +21,7 @@ appId: "1:798840057364:web:9c1feafc946880bc3c8101",
 
 measurementId: "G-G0DH9DWBY5",
 
-databaseURL: "https://mos-interface-app1-default-rtdb.asia-southeast1.firebasedatabase.app"
+databaseURL: "https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app"
 };
   
 firebase.initializeApp(firebaseConfig);
