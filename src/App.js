@@ -30,20 +30,27 @@ export default function App() {
       }
 
       const handleSubmit = (event) => {
+        event.preventDefault();
         if (user) {
-            console.log(inputs,user);
+            console.log(Object.keys(inputs).length, jsonQuestions.questions.length);
+            if (Object.keys(inputs).length !== jsonQuestions.questions.length) {
+                alert("Please select an option for all questions")
+            }
 
+            else {
             
-            database.ref("users").child(sha1(user.email)).set({
-                    email: user.email,
-                    options: inputs,
+                database.ref("users").child(sha1(user.email)).set({
+                        email: user.email,
+                        options: inputs,
 
-            }).catch(alert);
+                }).catch(alert);
 
+                    
                 
-            
-            auth.signOut();
-            setDone(true);  
+                auth.signOut();
+                setDone(true); 
+            } 
+
         }
         else {
             <Login />
