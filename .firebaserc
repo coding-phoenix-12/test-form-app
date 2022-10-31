@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "testing-form-new"
-  }
+    "default": "testing-form-new",
+    "testing-form-app": "mos-interface-app1"
+  },
+  "targets": {},
+  "etags": {}
 }

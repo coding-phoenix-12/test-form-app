@@ -6,7 +6,7 @@ const Login = () => {
   
     // Sign in with google
     const signin = () => {
-        auth.signInWithPopup(provider).catch(alert);
+        auth.signInWithRedirect(provider).catch(alert);
     }
       
     return (
