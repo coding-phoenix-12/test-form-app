@@ -1,11 +1,12 @@
 import React from "react"
-
-
   
 
 function Done () {
-    return(
-        <h1>Done</h1>
+    return (
+        <>
+            < hr />
+            <h3>Thank you for your response </h3>
+        </>
     )
 }
   
@@ -22,7 +23,7 @@ function Option (props) {
     return(
         <div className="options">
         <div className = "option-radio">
-            <label>
+        <label>
                 <input
                 name={props.name}
                 type = "radio"

@@ -5,6 +5,8 @@ import jsonQuestions from './questions.json';
 import {auth, database} from './firebasecomps';
 import Login from './login';
 import {useAuthState} from 'react-firebase-hooks/auth';
+import sha1 from 'sha1';
+import Button from '@mui/material/Button';
 
 
 /*
@@ -28,14 +30,24 @@ export default function App() {
       }
 
       const handleSubmit = (event) => {
-        console.log(inputs,user);
-        database.ref("user" + user.uid).set({
-           email: user.email,
-           options: inputs
-          }).catch(alert);
-        auth.signOut();
-        setDone(true);
-        
+        if (user) {
+            console.log(inputs,user);
+
+            
+            database.ref("users").child(sha1(user.email)).set({
+                    email: user.email,
+                    options: inputs,
+
+            }).catch(alert);
+
+                
+            
+            auth.signOut();
+            setDone(true);  
+        }
+        else {
+            <Login />
+        }
     }
 
 
@@ -45,9 +57,6 @@ export default function App() {
         <div className= "heading">
             <h1>English Male Voice Preference Test
             </h1>
-            <p>There are ten sentences below. For each of the sentences, there are seven recordings. Please mark which of the artist recording you prefer the most.
-            </p>
-            <hr /> 
             
          </div>
         
@@ -55,8 +64,11 @@ export default function App() {
             !user &&  !isDone && <Login />
         }
 
-        {!isDone && user && <form onSubmit={handleSubmit}>
+        {!isDone && user && <form>
         <div className= "form-wrapper">
+            <p>There are {jsonQuestions.questions.length} sentences below. For each of the sentences, there are seven recordings. Please mark which of the artist recording you prefer the most.
+            </p>
+            <hr /> 
         
         {
             jsonQuestions.questions.map((quest) => 
@@ -70,7 +82,9 @@ export default function App() {
             )
         }   
 
-        <input type="submit" />
+        <div>  
+                 <Button variant="contained" onClick={handleSubmit}>Submit</Button>
+        </div>
 
 
         </div>

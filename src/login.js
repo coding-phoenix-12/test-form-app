@@ -1,5 +1,6 @@
 import React from 'react';
 import {auth , provider}  from './firebasecomps.js';
+import Button from '@mui/material/Button';
   
 const Login = () => {
   
@@ -9,11 +10,8 @@ const Login = () => {
     }
       
     return (
-        <div>
-            <center>
-                <button style={{"marginTop" : "200px"}} 
-                onClick={signin}>Sign In with Google</button>
-            </center>
+        <div>  
+                 <Button variant="contained" onClick={signin}>Sign In with Google</Button>
         </div>
     );
 }

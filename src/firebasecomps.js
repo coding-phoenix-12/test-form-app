@@ -7,21 +7,22 @@ import 'firebase/compat/database';
 const firebaseConfig = {
     // Your credentials
 
-apiKey: "AIzaSyB0s-fu_VdP0XXJ1zvbLVeqQgjHHqk5ZVQ",
+    apiKey: "AIzaSyAZyM1cpCNy0t_4LyhcHDJLbupN9R--vJM",
 
-authDomain: "testing-form-new.firebaseapp.com",
+  authDomain: "mos-interface-app1.firebaseapp.com",
 
-databaseURL: "https://testing-form-new-default-rtdb.asia-southeast1.firebasedatabase.app",
+  databaseURL: "https://mos-interface-app1-default-rtdb.asia-southeast1.firebasedatabase.app",
 
-projectId: "testing-form-new",
+  projectId: "mos-interface-app1",
 
-storageBucket: "testing-form-new.appspot.com",
+  storageBucket: "mos-interface-app1.appspot.com",
 
-messagingSenderId: "191958925202",
+  messagingSenderId: "798840057364",
 
-appId: "1:191958925202:web:a3c3a05af8c9de21f3cb4b",
+  appId: "1:798840057364:web:a9f37563897458883c8101",
 
-measurementId: "G-WY1CD2YD4G"
+  measurementId: "G-SQXZ8299QW"
+  
 };
   
 firebase.initializeApp(firebaseConfig);
@@ -30,7 +31,9 @@ var provider = new firebase.auth.GoogleAuthProvider();
 
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
+  
+export default database;
 
-export {auth , provider, database};
+export {auth, provider, database};
 
 
